@@ -1,0 +1,5 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"yandex_api_key":"trnsl.1.1.20160907T190715Z.7f8fb9a0b4aaf491.ba350abb3221b0091eae2061f6e44e26aa0fe9db"
+}

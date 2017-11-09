@@ -1,0 +1,6 @@
+[
+    { 
+	"keys": ["win+shift+y"],
+	"command": "yaptrans"
+    }
+]

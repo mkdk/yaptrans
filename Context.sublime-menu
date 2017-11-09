@@ -1,0 +1,14 @@
+[  
+    {  
+        "id": "edit",
+        "caption":"Yaptrans",
+        "children":  
+        [  
+            { 
+            	"id" : "Яндекс.Переводчик",
+                "caption" : "Яндекс.Переводчик",
+                "command": "yaptrans", 
+            }  
+        ]  
+    }    
+]
