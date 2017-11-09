@@ -4,6 +4,7 @@ import urllib.request
 import urllib.request, urllib.error, urllib.parse
 import json
 
+
 class YaptransCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         text = self.get_selected_text()
