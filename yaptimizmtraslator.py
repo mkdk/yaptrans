@@ -31,11 +31,13 @@ class YaptransCommand(sublime_plugin.TextCommand):
         	conn = urllib.request.urlopen(url)
         except urllib.error.HTTPError as e:
             print(e)
+            settings.representation(str(e))
         except urllib.error.URLError as e:
             print('URLError')
+            settings.representation('URLError')
         else:
         	data = conn.read()
         	encoding = conn.info().get_content_charset('utf-8')
         	response = json.loads(data.decode(encoding))
-        	content = '<i>{}\n</i>«Переведено сервисом «Яндекс.Переводчик»\n<a href="http://translate.yandex.ru/">http://translate.yandex.ru/</a>'.format(response['text'][0])
+        	content = '<i>{}\n</i>\nПереведено сервисом «Яндекс.Переводчик»\n<a href="http://translate.yandex.ru/">http://translate.yandex.ru/</a>'.format(response['text'][0])
         	self.representation(content)
